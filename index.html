@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwin - Digital Art Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1 class="logo-statement">Kwin</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Portfolio</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><button class="btn-contact" onclick="openModal('contactModal')">Contact</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="card">
+                    <div class="hero-text">
+                        <h1 class="hero-heading">Greetings, Gremlins!</h1>
+                        <p class="hero-subtext">Hi, I'm Kwin. I specialize in creating stylized portraits, fan arts, and illustrations of both humans (and occasionally animals) for personal and commercial use.</p>
+                        <a href="#gallery" class="btn-contact btn-view-portfolio">View Portfolio</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/sunset.png" alt="Portrait of Artist Kwin">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="card about-card"> 
+                    <div class="about-content-grid">
+                        
+                        <div class="about-text-column">
+                            
+                            <div class="profile-picture-container">
+                                <img src="images/SelfPortrait.png" alt="Kwin's Profile Picture" class="profile-pic">
+                            </div>
+                            
+                            <h3 class="about-heading">My Creative Journey</h3>
+                            <p class="about-text">
+                                My passion lies in breathing life into narratives through visual art. With over five years of experience in digital illustration, I focus on fantasy and sci-fi genres, always prioritizing dynamic composition and emotional depth. I believe every project is a story waiting to be told. I am dedicated to collaboration and bringing client visions into a stunning reality.
+                            </p>
+                            
+                            <div class="socials-list">
+                                <a href="https://www.facebook.com/ralynqueen.jalandoon.3" target="_blank" class="social-icon facebook" title="Facebook">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="https://www.instagram.com/halfachoco" target="_blank" class="social-icon instagram" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="mailto:ralynjalandoon24@gmail.com" class="social-icon email" title="Email Me">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="about-skills-column">
+                            <h3 class="about-heading">Skills & Tools</h3>
+                            <div id="skills-list" class="skills-list">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="section-content-grid">
+                    <div class="grid-item grid-item-third">
+                        <div class="card">
+                            <h4 class="service-title">Portraits</h4>
+                            <p class="service-description">A stylized portrait good for icons and profile picture.</p>
+                            <p class="service-price">Starting at $20</p>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-item-third">
+                        <div class="card">
+                            <h4 class="service-title">Fan Art</h4>
+                            <p class="service-description">A fan art of a character from a fandom or your own OC, be it icon-szied, half-body, or fullbody.</p>
+                            <p class="service-price">Starting at $25</p>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-item-third">
+                        <div class="card">
+                            <h4 class="service-title">Sketches</h4>
+                            <p class="service-description">A sketch of an illustration.</p>
+                            <p class="service-price">Starting at $10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2>Example of my Artworks</h2>
+                <div class="section-content-grid">
+
+                    <div class="grid-item grid-item-third">
+                        <div class="gallery-item">
+                            <img src="images/Satyr.png" alt="Satyr" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="gallery-overlay">
+                                <h4 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Satyr</h4>
+                                <p style="font-size: 0.9rem; font-weight: 300; opacity: 0.8;">Character Portrait</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item grid-item-third">
+                        <div class="gallery-item">
+                            <img src="images/Tiger.png" alt="Tiger" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="gallery-overlay">
+                                <h4 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Tiger</h4>
+                                <p style="font-size: 0.9rem; font-weight: 300; opacity: 0.8;">Character Portrait</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item grid-item-third">
+                        <div class="gallery-item">
+                            <img src="images/Elf_Lady.jpg" alt="Elf_Lady" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="gallery-overlay">
+                                <h4 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Elf_Lady</h4>
+                                <p style="font-size: 0.9rem; font-weight: 300; opacity: 0.8;">Character Portrait</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item grid-item-third">
+                        <div class="gallery-item">
+                            <img src="images/Wolverine.png" alt="Wolverine" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="gallery-overlay">
+                                <h4 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Wolverine</h4>
+                                <p style="font-size: 0.9rem; font-weight: 300; opacity: 0.8;">Fan Art</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item grid-item-third">
+                        <div class="gallery-item">
+                            <img src="images/Magik.png" alt="Magik" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="gallery-overlay">
+                                <h4 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Magik</h4>
+                                <p style="font-size: 0.9rem; font-weight: 300; opacity: 0.8;">Fan Art</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item grid-item-third">
+                        <div class="gallery-item">
+                            <img src="images/Loki.png" alt="Loki" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="gallery-overlay">
+                                <h4 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Loki</h4>
+                                <p style="font-size: 0.9rem; font-weight: 300; opacity: 0.8;">Fan Art</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback">
+            <div class="container">
+                <h2>Customer Feedback</h2>
+                <div class="section-content-grid">
+                    <div class="grid-item grid-item-half">
+                        <div class="card">
+                            <blockquote class="feedback-quote">
+                                "Kwin delivered a character portrait that exceeded all expectations. The attention to detail and ability to capture the tone was phenomenal. Highly recommended!"
+                            </blockquote>
+                            <p class="feedback-name">— Marvin P., DND Den Master</p>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-item-half">
+                        <div class="card">
+                            <blockquote class="feedback-quote">
+                                "The Magik fanart Kwin created for my fanfiction was breathtaking. It truly brought the character to life. Fast, professional, and excellent quality."
+                            </blockquote>
+                            <p class="feedback-name">— Coolen N., Author/Hobbyist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="card cta-card">
+                    <h2 class="cta-heading">Want to commission me?</h2>
+                    <p class="cta-subtext">Discuss your vision with me. Fill out the contact form below to get in touch!</p>
+                    <button class="btn-contact btn-cta-large" onclick="openModal('contactModal')">Commission Me!</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Kwin's Portfolio. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about-me">About</a>
+                <a href="#services">Services</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Contact Kwin</h3>
+                <button class="close-button" onclick="closeModal('contactModal')">&times;</button>
+            </div>
+            <p class="modal-description">Please fill out the form below and I will get back to you within 48 hours.</p>
+            
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="submitButton" class="btn-submit">Send Message</button>
+                <p id="contactMessage" class="message-success" style="display:none;"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
